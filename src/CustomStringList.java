@@ -2,11 +2,19 @@ public class CustomStringList {
 
     public String[] list;
 
-    public CustomStringList(String[] list){
+    public CustomStringList(String[] list) {
         this.list = list;
     }
-}
 
+    public boolean check(String word) {
+        for (int i = 0; i < list.length; i++) {
+            if (word.equals(list[i])) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
 
 
 //0. Добавить начальный набор методов и свойств

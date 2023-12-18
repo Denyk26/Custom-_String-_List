@@ -16,10 +16,15 @@ public class CustomStringList {
         return false;
     }
 
+    public boolean check(String[] words) {
+        return Arrays.equals(words,this.list);
+    }
+
     @Override
     public String toString() {
         return Arrays.toString(this.list);
     }
+
 }
 
 
